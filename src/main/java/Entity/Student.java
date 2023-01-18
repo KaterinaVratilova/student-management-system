@@ -11,14 +11,26 @@ public class Student {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
+  @Column(name = "first_name", nullable = false)
   private String firstName;
+
+  @Column(name = "last_name")
   private String lastName;
+  @Column(name = "company_name")
   private String companyName;
+
+  @Column(name = "email")
   private String email;
+  @Column(name = "course_name")
   private String courseName;
+  @Column(name = "course_date")
   private LocalDateTime courseDate;
+  @Column(name = "course_start_time")
   private LocalTime courseStartTime;
+  @Column(name = "course_id")
   private String courseID;
+  @Column(name = "costs")
   private Integer costs;
 
   public Student() {
